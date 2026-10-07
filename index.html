@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>dimensionamentoNBR5410</title>
+<title>Dimensionamento NBR 5410 - Condutores e Proteção</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f1ede3;--card:#fffdf8;--tx:#1b2433;--mu:#5f6676;--ac:#14304f;--onac:#fff;--ac2:#e9a100;--hero:#14304f;--ln:#d9d0bb;--ok:#1f7a4d;--wn:#b9650b;--er:#b3261e;--soft:#f6efdc;--grid:rgba(20,48,79,.06);--fh:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--fb:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--fm:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -15,7 +15,7 @@ body{margin:0;background-color:var(--bg);background-image:linear-gradient(var(--
 .hero{background-color:var(--hero);background-image:linear-gradient(rgba(233,161,0,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(233,161,0,.08) 1px,transparent 1px);background-size:32px 32px;color:#fff;border-bottom:6px solid var(--ac2)}
 .hero .in{max-width:980px;margin:0 auto;padding:32px 16px;display:flex;gap:24px;align-items:center;justify-content:space-between}
 .eye{margin:0 0 6px;font:500 12px var(--fm);letter-spacing:.18em;color:var(--ac2)}
-.hero h1{margin:0;font:700 clamp(30px,6vw,50px)/1 var(--fh);text-transform:uppercase;letter-spacing:.01em}
+.hero h1{margin:0;font:700 clamp(28px,5vw,50px)/1 var(--fh);text-transform:uppercase;letter-spacing:.01em}
 .hero .sub{margin:10px 0 14px;max-width:520px;opacity:.88}
 .tags{display:flex;flex-wrap:wrap;gap:6px}.tags span{border:1px solid rgba(255,255,255,.35);padding:2px 9px;font:500 12px var(--fm)}
 .cab{width:150px;flex:none}
@@ -26,17 +26,17 @@ h2::before{background:var(--ac2);color:#1b2433;font:600 13px var(--fm);padding:3
 #cfg h2::before{content:"01"}#form h2::before{content:"02"}#res>h2:first-child::before{content:"03"}#mem>h2::before{content:"04"}#dgm h2::before{content:"05"}#learn h2::before{content:"06"}
 #res h2:not(:first-child)::before{content:"▸";padding:3px 8px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--ln);background:var(--card);color:var(--tx);padding:9px 14px;border-radius:3px;cursor:pointer;font:500 14px var(--fb)}
+.chip{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--ln);background:var(--card);color:var(--tx);padding:10px 14px;border-radius:3px;cursor:pointer;font:500 14px var(--fb);min-height:42px}
 .chip:hover{border-color:var(--ac)}
 .chip.on{background:var(--ac);color:var(--onac);border-color:var(--ac)}
 .hint{color:var(--mu);font-size:13px;margin:8px 0 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
 label{display:flex;flex-direction:column;font:500 12px var(--fm);color:var(--mu);gap:4px;text-transform:uppercase;letter-spacing:.03em}
-input,select{font:400 15px var(--fb);text-transform:none;letter-spacing:0;padding:9px;border:1.5px solid var(--ln);border-radius:3px;background:var(--bg);color:var(--tx);min-width:0}
+input,select{font:400 16px var(--fb);text-transform:none;letter-spacing:0;padding:9px;border:1.5px solid var(--ln);border-radius:3px;background:var(--bg);color:var(--tx);min-width:0;min-height:42px}
 input:focus,select:focus{outline:2px solid var(--ac2);border-color:var(--ac2)}
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:12px 0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:12px 0}
 .kpi{background:var(--soft);border-left:5px solid var(--ac2);padding:10px 12px}
-.kpi b{display:block;font:700 28px/1.1 var(--fh)}.kpi span{font-size:12px;color:var(--mu)}
+.kpi b{display:block;font:700 26px/1.1 var(--fh)}.kpi span{font-size:12px;color:var(--mu)}
 .badge{display:inline-block;padding:3px 10px;border-radius:2px;font:600 12px var(--fm);letter-spacing:.04em;color:#fff;text-transform:none}
 .ok{background:var(--ok)}.wn{background:var(--wn)}.er{background:var(--er)}
 .th{background:var(--soft);border:1px dashed var(--ac2);padding:10px 12px;margin:0 0 12px;font-size:14px}
@@ -44,13 +44,13 @@ table{border-collapse:collapse;width:100%;font-size:14px}
 th{font:500 11.5px var(--fm);text-transform:uppercase;letter-spacing:.05em;color:var(--mu)}
 th,td{border-bottom:1px solid var(--ln);padding:7px 8px;text-align:left}
 tr:nth-child(even) td{background:var(--soft)}
-.sc{overflow-x:auto}
+.sc{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .step{border-left:3px solid var(--ac2);padding:2px 0 2px 14px;margin:14px 0}
 .step h3{margin:0 0 4px;font:700 18px var(--fh);text-transform:uppercase;letter-spacing:.02em}
-.f{font:400 13px var(--fm);background:var(--soft);border:1px dashed var(--ln);padding:2px 7px;display:inline-block;margin:2px 0}
+.f{font:400 13px var(--fm);background:var(--soft);border:1px dashed var(--ln);padding:2px 7px;display:inline-block;margin:2px 0;word-break:break-word}
 details{border:1px solid var(--ln);border-radius:3px;padding:9px 13px;margin:8px 0;background:var(--bg)}
 summary{cursor:pointer;font-weight:600}
-button.bt{background:var(--ac);color:var(--onac);border:0;border-radius:3px;padding:10px 16px;font:600 14px var(--fb);cursor:pointer}
+button.bt{background:var(--ac);color:var(--onac);border:0;border-radius:3px;padding:12px 18px;font:600 15px var(--fb);cursor:pointer;min-height:44px;width:100%}
 .hide{display:none!important}
 .tc svg{width:100%;height:auto;background:var(--soft);border:1px solid var(--ln);margin-top:10px}
 .tc text{fill:var(--mu);font:11px var(--fm)}
@@ -59,7 +59,26 @@ button.bt{background:var(--ac);color:var(--onac);border:0;border-radius:3px;padd
 .tc .mk1{stroke:var(--ok);stroke-width:2}.tc .mk2{stroke:var(--er);stroke-width:2;stroke-dasharray:5 4}.tc .mk3{stroke:var(--wn);stroke-width:5}
 .tc .t1{fill:var(--ok)}.tc .t2{fill:var(--er)}.tc .t3{fill:var(--wn)}.tc .lb{font-weight:600;letter-spacing:.1em;font-size:10px}
 footer{color:var(--mu);font-size:12.5px;padding:6px 16px 28px;max-width:980px;margin:0 auto;border-top:1px solid var(--ln)}
-@media (max-width:620px){.cab{width:84px}}
+
+/* Regras Responsivas para Celular */
+@media (max-width:640px){
+  .hero .in{flex-direction:column-reverse;align-items:flex-start;padding:20px 14px;gap:16px}
+  .cab{width:70px}
+  .hero h1{font-size:32px}
+  .hero .sub{font-size:13.5px;margin:6px 0 10px}
+  main{padding:12px 10px 4px}
+  .card{padding:14px;margin-bottom:12px}
+  h2{font-size:21px}
+  .grid{grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+  .chips{display:grid;grid-template-columns:1fr;gap:6px}
+  .chip{width:100%;justify-content:flex-start}
+  .kpis{grid-template-columns:repeat(2,1fr);gap:8px}
+  .kpi b{font-size:22px}
+}
+@media (max-width:400px){
+  .grid{grid-template-columns:1fr}
+  .kpis{grid-template-columns:1fr}
+}
 @media print{.hero,#cfg,#form,#learn,.noprint{display:none!important}body{background:#fff;color:#000}.card{border:0;box-shadow:none}}
 .dg svg{width:100%;height:auto;background:var(--soft);border:1px solid var(--ln)}
 .dg text{fill:var(--tx);font:12px var(--fb)}.dg .at{fill:var(--onac);font:600 11px var(--fb)}.dg .dt{font:600 11px var(--fm)}.dg .hd{font:700 14px var(--fh);letter-spacing:.08em}
@@ -221,7 +240,7 @@ document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>setKind(c.dataset.k)
 $('tue').onchange=()=>{if($('tue').value)$('P').value=$('tue').value;run()};
 document.querySelectorAll('#form input,#form select').forEach(e=>e.oninput=run);
 const nx=x=>SEC.findIndex(s=>s>=x-1e-6);
-function read(){const n=id=>parseFloat($(id).value),c={kind,fs:parseFloat($('fs').value)||1,tp:parseFloat($('tp').value)||3,fases:$('fases').value,V:n('V'),L:n('L'),iso:$('iso').value,met:$('met').value,temp:n('temp')||30,ng:n('ng')||1,dvmax:n('dvmax')||4,icc:n('icc')||0,iccmin:n('iccmin')||0,t:n('t')||.1,fp:n('fp')||1,carga:KIND[kind][2].carga};
+function read(){const n=id=>parseFloat($(id).value),c={kind,fs:parseFloat($('fs').value)||1,tp:parseFloat($('tp').value)\vert{}\vert{}3,fases:$('fases').value,V:n('V'),L:n('L'),iso:$('iso').value,met:$('met').value,temp:n('temp')||30,ng:n('ng')||1,dvmax:n('dvmax')||4,icc:n('icc')||0,iccmin:n('iccmin')||0,t:n('t')||.1,fp:n('fp')||1,carga:KIND[kind][2].carga};
  const tri=c.fases==='T';if(kind==='TUG'){c.S=n('nT')*n('vaT');c.fp=.8;c.Ib=c.S/c.V*(tri?1/Math.sqrt(3):1);c.f=`Ib = S / V = ${f(c.S)} VA / ${f(c.V)} V`}
  else if(kind==='SIN'){c.fp=1;c.Ib=n('Is');c.f='Ib informada'}
  else if(kind==='MOT'){c.eta=n('eta')||1;c.ipin=n('ipin')||7;const W=n('cv')*735.5;c.Ib=n('Ipl')>0?n('Ipl'):W/((tri?Math.sqrt(3):1)*c.V*c.fp*c.eta);c.f=n('Ipl')>0?'Ib = corrente de placa informada':`Ib = (cv × 735,5) / (${tri?'√3 × ':''}V × FP × η) = ${f(W,0)} W / (${tri?'√3 × ':''}${f(c.V)} × ${f(c.fp)} × ${f(c.eta)})`}
@@ -257,20 +276,20 @@ function run(){const c=read(),r=calc(c),R=$('res'),M=$('mem');
  <div class="kpi"><b>${r.In0} A ${r.mccb?'caixa moldada':r.rec?'curva '+r.rec.n:'—'}</b><span>Disjuntor${c.icc?' (Icu ≥ '+r.icu+' kA)':''}</span></div><div class="kpi"><b>${f(c.Ib)} A</b><span>Ib de projeto</span></div>
  <div class="kpi"><b>${f(r.iz,1)} A</b><span>Iz do condutor</span></div><div class="kpi"><b>${f(r.dv)} %</b><span>Queda de tensão (máx. ${f(c.dvmax)} %)</span></div></div>
  <div class="sc"><table><tr><th>Critério</th><th>Seção mínima exigida</th></tr><tr><td>1. Seção mínima (Tab. 47)</td><td>${f(SEC[r.iMin])} mm²</td></tr><tr><td>2. Ampacidade</td><td>${f(SEC[r.iAmp])} mm²</td></tr><tr><td>3. Queda de tensão</td><td>${f(SEC[r.iDV])} mm²</td></tr><tr><td>4. Curto-circuito</td><td>${r.iCC>=0?f(SEC[r.iCC])+' mm²':'não verificado'}</td></tr></table></div>
- ${r.mccb?mcc(r):`<h2 style="margin-top:18px">Disjuntor de ${r.In0} A — térmico e magnético</h2><div class="th"><b>Proteção térmica (sobrecarga):</b> não atua até 1,13×In = ${f(1.13*r.In0)} A e atua em até ${r.In0>63?2:1} h a 1,45×In = ${f(1.45*r.In0)} A. Condição da norma: I<sub>2</sub> = ${f(1.45*r.In0)} A ≤ 1,45×Iz = ${f(1.45*r.iz,1)} A ${tk(1.45*r.In0<=1.45*r.iz)}<br><b>Proteção magnética (curto-circuito):</b> depende da curva escolhida, conforme a tabela abaixo.</div><div class="sc"><table><tr><th>Curva</th><th>Disparo magnético (instantâneo)</th><th>Atua no fim do circuito?</th><th>Aguenta a partida?</th><th></th></tr>
+ ${r.mccb?mcc(r):`<h2 style="margin-top:18px">Disjuntor de ${r.In0} A — térmico e magnético</h2><div class="th"><b>Proteção térmica (sobrecarga):</b> não atua até 1,13×In = ${f(1.13*r.In0)} A e atua em até ${r.In0>63?2:1} h a 1,45×In =${f(1.45*r.In0)} A. Condição da norma: I<sub>2</sub> = ${f(1.45*r.In0)} A ≤ 1,45×Iz = ${f(1.45*r.iz,1)} A${tk(1.45*r.In0<=1.45*r.iz)}<br><b>Proteção magnética (curto-circuito):</b> depende da curva escolhida, conforme a tabela abaixo.</div><div class="sc"><table><tr><th>Curva</th><th>Disparo magnético (instantâneo)</th><th>Atua no fim do circuito?</th><th>Aguenta a partida?</th><th></th></tr>
  ${r.cv.map(x=>`<tr><td><b>${x.n}</b></td><td>${f(x.lo,0)} a ${f(x.hi,0)} A</td><td>${tk(x.m)}</td><td>${c.kind==='MOT'?tk(x.pi):'n/a'}</td><td>${r.rec&&r.rec.n===x.n?'<span class="badge ok">sugerida</span>':''}</td></tr>`).join('')}</table></div>
  `}${tcBlock(r)}${rtBlock(r)}${warn.map(w=>`<p class="hint"><b>Atenção:</b> ${w}</p>`).join('')}<p class="noprint"><button class="bt" onclick="window.print()">Imprimir / salvar PDF</button></p>`;
  const s=(t,b)=>`<div class="step"><h3>${t}</h3>${b}</div>`,x=SEC[r.iA];
  M.innerHTML=`<h2>4. Memorial de cálculo</h2>
- ${s('Passo 1 – Corrente de projeto (Ib)',`<span class="f">${c.f} = ${f(c.Ib)} A</span>`)}
+ ${s('Passo 1 – Corrente de projeto (Ib)',`<span class="f">${c.f} =${f(c.Ib)} A</span>`)}
  ${s('Passo 2 – Seção mínima (Tab. 47)',`Circuito de ${c.carga==='I'?'iluminação':c.carga==='S'?'sinalização':'força'}: <span class="f">S ≥ ${f(SEC[r.iMin])} mm²</span>`)}
  ${s('Passo 3 – Disjuntor (Ib ≤ In ≤ Iz)',`Menor corrente padronizada ≥ Ib: <span class="f">In = ${r.In0} A</span>. O cabo será escolhido para suportar In.`)}
- ${s('Passo 4 – Ampacidade (Tab. 36/37)',`FCT (${c.temp} °C) = <b>${f(r.fct)}</b>; FCA (${c.ng} circuito${c.ng>1?'s':''}) = <b>${f(r.fca)}</b>; ${r.nC} condutores carregados, método ${c.met}.<br><span class="f">I'tab ≥ In / (FCT × FCA) = ${r.In0} / (${f(r.fct)} × ${f(r.fca)}) = ${f(r.In0/(r.fct*r.fca))} A</span><br>Resultado: <b>${f(SEC[r.iAmp])} mm²</b>.`)}
- ${s('Passo 5 – Queda de tensão',`<span class="f">ΔV = ${r.tri?'√3':'2'} × Ib × L × (R·cosφ + X·senφ)</span> com R = ρ/S (ρ = ${r.rho} Ω·mm²/m) e X = ${r.X} Ω/km.<br>Menor seção com ΔV% ≤ ${f(c.dvmax)}%: <b>${f(SEC[r.iDV])} mm²</b>.`)}
- ${s('Passo 6 – Curto-circuito',c.icc>0?`<span class="f">S ≥ Icc × √t / k = ${f(c.icc*1000,0)} × √${f(c.t)} / ${r.k} = ${f(c.icc*1000*Math.sqrt(c.t)/r.k)} mm²</span> → <b>${f(SEC[r.iCC])} mm²</b>.`:'Icc não informada — critério não verificado.')}
- ${s('Passo 7 – Seção adotada',`<span class="f">S = máx(${f(SEC[r.iMin])}; ${f(SEC[r.iAmp])}; ${f(SEC[r.iDV])}${r.iCC>=0?'; '+f(SEC[r.iCC]):''}) = ${f(x)} mm²</span> (decide: ${r.crit}).<br>Verificação: Iz = ${f(r.Itab,1)} × ${f(r.fct)} × ${f(r.fca)} = <b>${f(r.iz,1)} A</b> ≥ In ✔; ΔV real = <b>${f(r.dv)} %</b>.`)}
+ ${s('Passo 4 – Ampacidade (Tab. 36/37)',`FCT (${c.temp} °C) = <b>${f(r.fct)}</b>; FCA (${c.ng} circuito${c.ng>1?'s':''}) = <b>${f(r.fca)}</b>;${r.nC} condutores carregados, método ${c.met}.<br><span class="f">I'tab ≥ In / (FCT × FCA) = ${r.In0} / (${f(r.fct)} ×${f(r.fca)}) = ${f(r.In0/(r.fct*r.fca))} A</span><br>Resultado: <b>${f(SEC[r.iAmp])} mm²</b>.`)}
+ ${s('Passo 5 – Queda de tensão',`<span class="f">ΔV = ${r.tri?'√3':'2'} × Ib × L × (R·cosφ + X·senφ)</span> com R = ρ/S (ρ = ${r.rho} Ω·mm²/m) e X = ${r.X} Ω/km.<br>Menor seção com ΔV% ≤ ${f(c.dvmax)}\%: <b>${f(SEC[r.iDV])} mm²</b>.`)}
+ ${s('Passo 6 – Curto-circuito',c.icc>0?`<span class="f">S ≥ Icc × √t / k = ${f(c.icc*1000,0)} × √${f(c.t)} /${r.k} = ${f(c.icc*1000*Math.sqrt(c.t)/r.k)} mm²</span> → <b>${f(SEC[r.iCC])} mm²</b>.`:'Icc não informada — critério não verificado.')}
+ ${s('Passo 7 – Seção adotada',`<span class="f">S = máx(${f(SEC[r.iMin])};${f(SEC[r.iAmp])}; ${f(SEC[r.iDV])}${r.iCC>=0?'; '+f(SEC[r.iCC]):''}) = ${f(x)} mm²</span> (decide:${r.crit}).<br>Verificação: Iz = ${f(r.Itab,1)} ×${f(r.fct)} × ${f(r.fca)} = <b>${f(r.iz,1)} A</b> ≥ In ✔; ΔV real = <b>${f(r.dv)} %</b>.`)}
  ${s('Passo 8 – Neutro e PE',`Neutro = fase = ${f(x)} mm² (redução só com carga equilibrada e sem harmônicas). PE (Tab. 58): <b>${f(r.pe)} mm²</b>.`)}
- ${s('Passo 9 – Proteção térmica (sobrecarga)',`Disjuntor padrão IEC 60898: não atua até <b>1,13×In</b> e atua em até ${r.In0>63?2:1} h a <b>1,45×In</b> (corrente convencional de atuação I<sub>2</sub>).<br><span class="f">I2 = 1,45 × ${r.In0} = ${f(1.45*r.In0)} A ≤ 1,45 × Iz = 1,45 × ${f(r.iz,1)} = ${f(1.45*r.iz,1)} A</span> ${1.45*r.In0<=1.45*r.iz?'✔':'✘'}`)}
+ ${s('Passo 9 – Proteção térmica (sobrecarga)',`Disjuntor padrão IEC 60898: não atua até <b>1,13×In</b> e atua em até ${r.In0>63?2:1} h a <b>1,45×In</b> (corrente convencional de atuação I<sub>2</sub>).<br><span class="f">I2 = 1,45 × ${r.In0} = ${f(1.45*r.In0)} A ≤ 1,45 × Iz = 1,45 × ${f(r.iz,1)} = ${f(1.45*r.iz,1)} A</span>${1.45*r.In0<=1.45*r.iz?'✔':'✘'}`)}
  ${s('Passo 10 – Proteção magnética e curva',`Disparo magnético: B = 3–5×In, C = 5–10×In, D = 10–20×In (In = ${r.In0} A).<br>${c.iccmin?`Condição de atuação: <span class="f">hi×In ≤ Icc mín = ${f(c.iccmin,0)} A</span>.`:'Icc mínima não informada.'}${r.ip?`<br>Partida: Ip = ${f(c.ipin)} × ${f(c.Ib)} = ${f(r.ip)} A; condição <span class="f">lo×In ≥ 1,2 × Ip = ${f(1.2*r.ip)} A</span>.`:''}<br>${r.rec?`Curva sugerida: <b>${r.rec.n}</b>.`:'Nenhuma curva atende.'}${c.icc?` Capacidade de interrupção ≥ <b>${r.icu} kA</b>.`:''}`)}`;$('dgm').innerHTML=diagram(r)}
 setKind('TUE');
 </script>
